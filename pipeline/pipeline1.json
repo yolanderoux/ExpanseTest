@@ -1,0 +1,30 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Get Xero Refresh Token",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.00:05:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": true,
+					"secureInput": true
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://identity.xero.com/connect/token",
+					"method": "POST",
+					"headers": {
+						"Authorization": "Basic @{base64('C4DC185B00654F56B7A5960527D4B4ED:9xotYujDABQFTD00caj2gO-Eeu4CC8kQm0_crVia7u-QQl90')}",
+						"Content-Type": "application/x-www-form-urlencoded"
+					},
+					"body": "grant_type=refresh_token&refresh_token=@{activity('Get Xero Refresh Token').output.value}"
+				}
+			}
+		],
+		"annotations": []
+	}
+}
