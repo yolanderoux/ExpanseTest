@@ -1,0 +1,9 @@
+{
+	"name": "ExpanseTest",
+	"location": "australiasoutheast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "eff4300f-99c2-4cce-a473-f6cc8045b693",
+		"tenantId": "400dea88-6857-4378-a94b-2fb52ffdef6e"
+	}
+}
