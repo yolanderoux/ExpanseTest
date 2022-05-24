@@ -10,9 +10,9 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "Test.csv",
-				"folderPath": "FirstTry",
-				"container": "InvoiceDump"
+				"fileName": "test.csv",
+				"folderPath": "firstrry",
+				"container": "invoicedump"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
